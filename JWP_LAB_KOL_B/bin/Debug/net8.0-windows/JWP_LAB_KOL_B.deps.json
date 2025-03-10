@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "JWP_LAB_KOL_B/1.0.0": {
+        "runtime": {
+          "JWP_LAB_KOL_B.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "JWP_LAB_KOL_B/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
