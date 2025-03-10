@@ -18,3 +18,4 @@ D:\JWP_LABY\JWP_LAB_1C\obj\Debug\net8.0-windows\refint\JWP_LAB_1C.dll
 D:\JWP_LABY\JWP_LAB_1C\obj\Debug\net8.0-windows\JWP_LAB_1C.pdb
 D:\JWP_LABY\JWP_LAB_1C\obj\Debug\net8.0-windows\JWP_LAB_1C.genruntimeconfig.cache
 D:\JWP_LABY\JWP_LAB_1C\obj\Debug\net8.0-windows\ref\JWP_LAB_1C.dll
+D:\JWP_LABY\JWP_LAB_1C\obj\Debug\net8.0-windows\JWP_LAB_1C.sourcelink.json

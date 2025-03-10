@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWP_LAB_1B", "JWP_LAB_1B.csproj", "{94A57BD0-8FA6-48BE-8136-226F32A6BE0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94A57BD0-8FA6-48BE-8136-226F32A6BE0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94A57BD0-8FA6-48BE-8136-226F32A6BE0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94A57BD0-8FA6-48BE-8136-226F32A6BE0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94A57BD0-8FA6-48BE-8136-226F32A6BE0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE109F3C-EC5E-425C-94FA-9594B585DDD5}
+	EndGlobalSection
+EndGlobal
