@@ -5,16 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JWP_LAB_2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="502" Width="800">
     <Grid>
-        <Button x:Name="btnTest1" Content="Test1" HorizontalAlignment="Left" Margin="140,118,0,0" VerticalAlignment="Top" Height="31" Width="74" Click="Button_Click"/>
-        <ListBox x:Name="lsbTest1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,10,457,296"/>
+        <Button x:Name="btnTest1" Content="Test1" HorizontalAlignment="Left" Margin="140,139,0,0" VerticalAlignment="Top" Height="31" Width="74" Click="Button_Click"/>
+        <ListBox x:Name="lsbTest1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,10,453,332"/>
         <Button x:Name="btnTest2" Content="Test2" HorizontalAlignment="Left" Margin="378,56,0,0" VerticalAlignment="Top" Height="23" Width="68" Click="btnTest2_Click"/>
         <TextBox x:Name="txtPodstawa" HorizontalAlignment="Left" Margin="352,10,0,0" TextWrapping="Wrap" Text="Podstawa" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtWykładnik" HorizontalAlignment="Left" Margin="352,33,0,0" TextWrapping="Wrap" Text="Wykładnik" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtSzerokość" HorizontalAlignment="Left" Margin="496,10,0,0" TextWrapping="Wrap" Text="Szerokość" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtWysokość" HorizontalAlignment="Left" Margin="496,33,0,0" TextWrapping="Wrap" Text="Wysokość" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnTest3" Content="Test3" HorizontalAlignment="Left" Margin="522,56,0,0" VerticalAlignment="Top" Height="23" Width="68" Click="btnTest3_Click"/>
+        <Button x:Name="btnTest4" Content="Test4" HorizontalAlignment="Left" Margin="140,394,0,0" VerticalAlignment="Top" Height="30" Width="74" Click="btnTest4_Click"/>
+        <Canvas x:Name="cvsTrzepak" Margin="28,189,472,195" Height="200">
+            <Canvas.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF00E2FF"/>
+                    <GradientStop Color="#FF4E3318" Offset="1"/>
+                    <GradientStop Color="#FF7CF0FF" Offset="0.733"/>
+                </LinearGradientBrush>
+            </Canvas.Background>
+        </Canvas>
 
     </Grid>
 </Window>

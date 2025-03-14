@@ -41,6 +41,18 @@ namespace JWP_LAB_2
 
             return podstawa * potęga(podstawa, wykładnik - 1);
         }
+        private void rysujLinię(int startX, int endX, int startY, int endY, Brush kolor, int thickness)
+        {
+            Line myLine = new Line();
+            myLine.Stroke = kolor;
+            myLine.X1 = startX;
+            myLine.X2 = endX;
+            myLine.Y1 = startY;
+            myLine.Y2 = endY;
+            myLine.StrokeThickness = thickness;
+
+            cvsTrzepak.Children.Add(myLine);
+        }
 
         // PRZYCISKI
 
@@ -94,13 +106,24 @@ namespace JWP_LAB_2
 
                     MessageBox.Show($"Pole: {wynik.pole}, obwód: {wynik.obwód}, przekątna: {wynik.przekątna}", "Rezultat", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
-                else MessageBox.Show("Wprowadź dodatnie liczby w polach!", "Błąd zakresu", MessageBoxButton.OK, MessageBoxImage.Error);
+                else MessageBox.Show("Wprowadź dodatnie liczby w polach!", "Błąd zakresu", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
             catch
             {
                 MessageBox.Show("Wprowadź dane w odpowiednim formacie!", "Błąd formatu", MessageBoxButton.OK, MessageBoxImage.Error);
             }
           
+        }
+
+        private void btnTest4_Click(object sender, RoutedEventArgs e)
+        {
+            int[,] wymiary = { { 0, 300, 0, 0 }, { 60, 60, 0, 200 }, { 240, 240, 0, 200 }, { 60, 240, 60, 60 } };
+            Brush[] kolory = { Brushes.Black, Brushes.Green, Brushes.Green, Brushes.Red };
+
+            for(int i=0; i < 4; i++)
+            {
+                rysujLinię(wymiary[i, 0], wymiary[i, 1], wymiary[i, 2], wymiary[i, 3], kolory[i], 10);
+            }
         }
     }
 }
