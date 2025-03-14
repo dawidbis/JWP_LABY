@@ -9,6 +9,12 @@
     <Grid>
         <Button x:Name="btnTest1" Content="Test1" HorizontalAlignment="Left" Margin="140,118,0,0" VerticalAlignment="Top" Height="31" Width="74" Click="Button_Click"/>
         <ListBox x:Name="lsbTest1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,10,457,296"/>
+        <Button x:Name="btnTest2" Content="Test2" HorizontalAlignment="Left" Margin="378,56,0,0" VerticalAlignment="Top" Height="23" Width="68" Click="btnTest2_Click"/>
+        <TextBox x:Name="txtPodstawa" HorizontalAlignment="Left" Margin="352,10,0,0" TextWrapping="Wrap" Text="Podstawa" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtWykładnik" HorizontalAlignment="Left" Margin="352,33,0,0" TextWrapping="Wrap" Text="Wykładnik" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtSzerokość" HorizontalAlignment="Left" Margin="496,10,0,0" TextWrapping="Wrap" Text="Szerokość" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtWysokość" HorizontalAlignment="Left" Margin="496,33,0,0" TextWrapping="Wrap" Text="Wysokość" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnTest3" Content="Test3" HorizontalAlignment="Left" Margin="522,56,0,0" VerticalAlignment="Top" Height="23" Width="68" Click="btnTest3_Click"/>
 
     </Grid>
 </Window>
