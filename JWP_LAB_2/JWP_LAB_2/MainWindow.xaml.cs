@@ -41,7 +41,7 @@ namespace JWP_LAB_2
 
             return podstawa * potęga(podstawa, wykładnik - 1);
         }
-        private void rysujLinię(int startX, int endX, int startY, int endY, Brush kolor, int thickness)
+        private void rysujLinię(int startX, int endX, int startY, int endY, Brush kolor, int thickness, Canvas canvas)
         {
             Line myLine = new Line();
             myLine.Stroke = kolor;
@@ -51,7 +51,25 @@ namespace JWP_LAB_2
             myLine.Y2 = endY;
             myLine.StrokeThickness = thickness;
 
-            cvsTrzepak.Children.Add(myLine);
+            canvas.Children.Add(myLine);
+        }
+
+        private void rysujGwiazdę(int x, int y, int length, Brush kolor, int thickness, Canvas canvas, int minLength)
+        {
+            if (length < minLength) return; 
+
+            rysujLinię(x - length / 2, x + length / 2, y, y, kolor, thickness, canvas);
+            rysujLinię(x - length / 4, x + length / 4, y - length / 2, y + length / 2, kolor, thickness, canvas);
+            rysujLinię(x + length / 4, x - length / 4, y - length / 2, y + length / 2, kolor, thickness, canvas);
+
+            int newLength = length / 3; 
+
+            rysujGwiazdę(x - length / 2, y, newLength, kolor, thickness, canvas, minLength);
+            rysujGwiazdę(x + length / 2, y, newLength, kolor, thickness, canvas, minLength);
+            rysujGwiazdę(x - length / 4, y - length / 2, newLength, kolor, thickness, canvas, minLength);
+            rysujGwiazdę(x + length / 4, y - length / 2, newLength, kolor, thickness, canvas, minLength);
+            rysujGwiazdę(x - length / 4, y + length / 2, newLength, kolor, thickness, canvas, minLength);
+            rysujGwiazdę(x + length / 4, y + length / 2, newLength, kolor, thickness, canvas, minLength);
         }
 
         // PRZYCISKI
@@ -122,8 +140,14 @@ namespace JWP_LAB_2
 
             for(int i=0; i < 4; i++)
             {
-                rysujLinię(wymiary[i, 0], wymiary[i, 1], wymiary[i, 2], wymiary[i, 3], kolory[i], 10);
+                rysujLinię(wymiary[i, 0], wymiary[i, 1], wymiary[i, 2], wymiary[i, 3], kolory[i], 10, cvsTrzepak);
             }
+        }
+
+        private void btnGwiazda_Click(object sender, RoutedEventArgs e)
+        {
+            cvsGwiazda.Children.Clear();
+            rysujGwiazdę(100, 100, 120, Brushes.DarkOrange, 2, cvsGwiazda, 5);
         }
     }
 }
